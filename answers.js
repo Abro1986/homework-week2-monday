@@ -117,16 +117,32 @@ const bondFilms = [
 
 //Odd Bonds
 
+//for (i = 0; i <= bondFilms.length-1; i++) {
+//	if (bondFilms[i].year % 2 === 1) {
+//		console.log(bondFilms[i].title)
+//	}
+//}
+
+//Total cumulative gross
+
+let str = "1,234,567,891";
+str = str.replace(/,/g, "");
+console.log(typeof(bondFilms[0].gross.replace(/,/g,"")))
+
+
+
+let bondGross = "0"	
+
 for (i = 0; i <= bondFilms.length-1; i++) {
-	if (bondFilms[i].year % 2 === 1) {
-		console.log(bondFilms[i].title)
-	}
+	console.log(bondGross = +bondGross + +bondFilms[i].gross.replace(/,/g,"").replace('$', ""));
+	
 }
 
+console.log("2" + "5");
 
 
+//console.log(+bondFilms[0].gross.replace(/,/g, "") + (+bondFilms[1].gross.replace(/,/g, "")));
 
-
-
+//console.log(bondFilms[1].gross.replace(/,/g, ""))
 
 
