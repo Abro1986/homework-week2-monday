@@ -111,14 +111,17 @@ const bondFilms = [
 ];
 
 
-  for (i = 0; i <= bondFilms.length-1; i++) {
-	console.log(bondFilms[i].title)
+ // for (i = 0; i <= bondFilms.length-1; i++) {
+	//console.log(bondFilms[i].title)
+//}
+
+//Odd Bonds
+
+for (i = 0; i <= bondFilms.length-1; i++) {
+	if (bondFilms[i].year % 2 === 1) {
+		console.log(bondFilms[i].title)
+	}
 }
-
-
-
-
-
 
 
 
